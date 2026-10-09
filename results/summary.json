@@ -1,0 +1,23 @@
+{
+  "reference_accuracy": 0.8162,
+  "n_seeds": 10,
+  "scenarios": {
+    "control": {
+      "runs": 10,
+      "false_alarm_rate": 0.0
+    },
+    "gradual_drift": {
+      "runs": 10,
+      "runs_with_real_failure": 10,
+      "warned_before_failure": 10,
+      "median_lead_time_batches": 5.5,
+      "min_lead_time": 4.0
+    },
+    "quality_break": {
+      "runs": 10,
+      "alerts_raised": 10,
+      "runs_with_accuracy_failure": 1,
+      "note": "Broken feed is caught and diagnosed as a data-quality issue; accuracy impact is small in this synthetic setup, so no lead-time claim is made."
+    }
+  }
+}
